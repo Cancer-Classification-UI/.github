@@ -1,12 +1,19 @@
-## Hi there 👋
+# Cancer Classification UI Github
+[![Python][Python-badge]][Python-url]
+[![Go][Go-badge]][Go-url]
 
-<!--
 
-**Here are some ideas to get you started:**
+This is the organization github page for a Cancer Classification UI. This contains all the our current codebases for our Frontend and Backend.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+Dive into any of our current repos!
+
+# Current Architecture (WIP)
+```mermaid
+
+```
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[Go-badge]: https://img.shields.io/badge/Go-00ADD8.svg?style=for-the-badge&logo=go&logoColor=white
+[Go-url]: https://go.dev/
+[Python-badge]: https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=FFD343
+[Python-url]: https://www.python.org/
