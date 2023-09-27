@@ -1,5 +1,6 @@
 # Cancer Classification UI Github
 [![Python][Python-badge]][Python-url]
+[![Pytorch][Pytorch-badge]][Pytorch-url]
 [![Go][Go-badge]][Go-url]
 
 
@@ -95,3 +96,5 @@ flowchart TB
 [Go-url]: https://go.dev/
 [Python-badge]: https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=FFD343
 [Python-url]: https://www.python.org/
+[Pytorch-badge]: https://img.shields.io/badge/Pytorch-EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white
+[Pytorch-url]: https://pytorch.org/
