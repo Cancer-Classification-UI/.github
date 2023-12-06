@@ -18,7 +18,6 @@ flowchart TB
     style Backend rx:10,ry:10
     style pod1 fill:#818898,rx:10,ry:10
     style pod2 fill:#818898,rx:10,ry:10
-    style pod3 fill:#818898,rx:10,ry:10
     style pod4 fill:#818898,rx:10,ry:10
     style pod5 fill:#818898,rx:10,ry:10
 
@@ -28,8 +27,6 @@ flowchart TB
     %% APIs / Backend
     DatabaseLoginAPI[(Login API\nDatabase)]
     DatabaseCDNAPI[(CDN API\nDatabase)]
-    DatabaseCoreAPI[(Core API\nDatabase)]
-    DatabaseNotificationAPI[(Notification API\nDatabase)]
 
 
     %% Login API
@@ -38,24 +35,15 @@ flowchart TB
     DatabaseLoginAPI <--> LoginAPI
     LoginAPI <--> WebAPI
 
+    %% Notification API
+    NotificationAPI([<a href='https://github.com/Cancer-Classification-UI/Notification-API-Service'>Notification API</a>])
+    NotificationAPI <--> LoginAPI
 
     %% CDN API
     CDNAPI([<a href='https://github.com/Cancer-Classification-UI/CDN-API-Service'>CDN API</a>]) 
 
     DatabaseCDNAPI <--> CDNAPI
     CDNAPI <--> WebAPI
-
-    %% Core API
-    CoreAPI([<a href='https://github.com/Cancer-Classification-UI/Core-API-Service'>Core API</a>])
-
-    DatabaseCoreAPI <--> CoreAPI
-    CoreAPI <--> WebAPI
-
-    %% Notification API
-    NotificationAPI([<a href='https://github.com/Cancer-Classification-UI/Notification-API-Service'>Notification API</a>]) 
-
-    DatabaseNotificationAPI <--> NotificationAPI
-    NotificationAPI <--> WebAPI
 
     subgraph AWS[fa:fa-cloud AWS]
         subgraph Kubernetes[fa:fa-dharmachakra Kubernetes Cluster]
@@ -70,13 +58,8 @@ flowchart TB
                     CDNAPI
                     DatabaseCDNAPI
                 end
-                subgraph pod3[fa:fa-box Pod]
-                    CoreAPI
-                    DatabaseCoreAPI
-                end
                 subgraph pod4[fa:fa-box Pod]
                     NotificationAPI
-                    DatabaseNotificationAPI
                 end
             end
 
